@@ -1,0 +1,15 @@
+[package]
+name = "tokio-buffer-repro"
+version = "0.1.0"
+authors = ["Eliza Weisman <eliza@buoyant.io>"]
+edition = "2018"
+
+[[bin]]
+name = "mpsc"
+
+[[bin]]
+name = "mutex"
+
+[dependencies]
+tokio = { version = "0.2.21", features = ["full"]}
+sysinfo = "0.14"
